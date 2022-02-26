@@ -1,20 +1,20 @@
 <?php
-require "info_db.php";
-
-$ip = $_SERVER["REMOTE_ADDR"];
-$token = $_COOKIE["token"];
-$sql = mysqli_connect("127.0.0.1", $user, $pwd, $db);
-
-if ($sql -> connect_error) {
-    header("Location: error.html");
-    exit();
-}
-
-$sql -> query("select * from Users where token = '$token'"); //prova
-
-if ($sql -> affected_rows != 1) {
-    header("Location: error.html");
-}
+	require "info_db.php";
+	
+	$ip = $_SERVER["REMOTE_ADDR"];
+	$token = $_COOKIE["token"];
+	$sql = mysqli_connect("127.0.0.1", $user, $pwd, $db);
+	
+	if ($sql -> connect_error) {
+	    header("Location: error.html");
+	    exit();
+	}
+	
+	$sql -> query("select * from Users where token = '$token'"); //prova
+	
+	if ($sql -> affected_rows != 1) {
+	    header("Location: error.html");
+	}
 ?>
 
 <html>
