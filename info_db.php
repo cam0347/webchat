@@ -1,5 +1,5 @@
 <?php
-$user = "root";
-$pwd = "";
-$db = "WebChat";
+	$user = "root";
+	$pwd = "";
+	$db = "WebChat";
 ?>
