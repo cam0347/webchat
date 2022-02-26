@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>WebChat</title>
+        <script type="text/javascript" src="js/md5.js" defer></script>
+        <script type="text/javascript" src="js/login.js" defer></script>
+    </head>
+    <body>
+        <form action="login.php" method="post">
+            <input type="text" id="user" placeholder="Username" />
+            <input type="password" id="pwd" placeholder="Password" />
+            <input type="button" value="Login" onclick="login()" />
+        </form>
+        <h4 id="msg_label"></h4>
+    </body>
+</html>
