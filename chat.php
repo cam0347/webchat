@@ -10,7 +10,7 @@
 	    exit();
 	}
 	
-	$sql -> query("select * from Users where token = '$token'"); //prova
+	$sql -> query("select * from Users where token = '$token'");
 	
 	if ($sql -> affected_rows != 1) {
 	    header("Location: error.html");
