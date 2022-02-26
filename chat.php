@@ -10,7 +10,7 @@ if ($sql -> connect_error) {
     exit();
 }
 
-$sql -> query("select * from Users where token = '$token'");
+$sql -> query("select * from Users where token = '$token'"); //prova
 
 if ($sql -> affected_rows != 1) {
     header("Location: error.html");
